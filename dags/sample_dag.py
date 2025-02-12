@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 
 with DAG(
-    "use_custom_package_as_requirement",
+    "_use_custom_package_as_requirement_",
     description="Use your custom package in DAG",
     schedule_interval=None,
     start_date=datetime(2021, 1, 1),
