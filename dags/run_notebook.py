@@ -24,8 +24,6 @@ with DAG(
     wait_for_termination=True,
     deferrable=True,
     job_params={
-                    "executionData": {
-                        "parameters": {
                         "_inlineInstallationEnabled": {
                             "value": "True",
                             "type": "bool"
@@ -34,9 +32,8 @@ with DAG(
                             "value": "Value",
                             "type": "string"
                         }
-                    }
-                    }
-                    }
+                }
+                
     )
     
     run_fabric_item
