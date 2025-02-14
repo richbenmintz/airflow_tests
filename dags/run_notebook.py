@@ -1,6 +1,6 @@
 from __future__ import annotations
 from airflow import DAG
-from apache_airflow_microsoft_fabric_plugin.operators.fabric import FabricRunItemOperator
+from apache_airflow_microsoft_fabric_plugin_rbm.operators.fabric import FabricRunItemOperator
 from airflow.utils.dates import days_ago
 
 default_args = {
